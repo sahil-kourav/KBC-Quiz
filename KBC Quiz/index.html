@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <a href="#" class="logo">KBC QUIZ</a>
+
+        <nav class="navbar">
+          <a href="#" class="active">Home</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <section class="quiz-section">
+          <div class="quiz-box">
+            <h1>KBC Quiz</h1>
+            <div class="quiz-header">
+              <div class="timer">
+                Time Left: <span class="timer-sec">30</span> seconds
+              </div>
+              <span class="header-score">Score: 0 / 5</span>
+            </div>
+
+            <h2 class="question-text">What is Java script</h2>
+
+            <div class="option-list">
+              <!-- Options will be dynamically generated here -->
+            </div> 
+
+            <div class="quiz-footer">
+              <span class="question-total">1 of 5 questions</span>
+              <button class="next-btn">Next</button>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <h2>Quiz Result!!</h2>
+            <div class="percentage-container">
+              <div class="circular-progress">
+                <span class="progress-value">0%</span>
+              </div>
+              <span class="score-text">Your score 0 out of 5</span>
+              <div class="attempted-text"></div>
+              <div class="correct-text"></div>
+              <div class="wrong-text"></div>
+              <div class="hate-text"></div>
+            </div>
+
+            <div class="buttons">
+              <button class="tryAgain-btn">Try Again</button>
+              <button class="goHome-btn">Go To Home</button>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="home">
+          <div class="home-content">
+            <h2>Quiz Website</h2>
+            <p>
+              Challenge your knowledge and discover how much you really know!<br>
+              Every question brings you closer to mastering new topics—are you ready to test your limits?<br>
+              Unlock new achievements with every correct answer—your brain’s workout starts now.<br>
+              It's not just a quiz, it’s a journey to becoming smarter every day!
+            </p>
+            <button class="start-btn">Start Quiz</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="popup-info">
+      <h2>Here are the quiz rules </h2>
+      <span class="info">1. Answer each question within the time limit.</span>
+      <span class="info">2. No changing answers once submitted.</span>
+      <span class="info">3. Only one answer is allowed per question.</span>
+      <span class="info">4. Points are based on correct and timely answers.</span>
+      <span class="info">5. Final score will be shown after the quiz ends.</span>
+
+      <div class="btn-group">
+        <button class="info-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="info-btn countinue-btn">Continue</a>
+      </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
